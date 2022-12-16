@@ -28,15 +28,15 @@ main {
 
 .card {
     display: flex;
-    height: 400px;
-    width: 900px;
+    height: 320px;
+    width: 850px;
     border-radius: 10px;
     background-color: white;
     border-radius: 15px;
 }
 
 .card>img {
-    width: 400px;
+    width: 330px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 
