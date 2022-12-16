@@ -17,13 +17,16 @@
 
 body {
     background-color: var(--lightGrayishBlue);
+    width: 100vw;
 }
 
 main {
     height: 100vh;
     width: 100vw;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
 }
 
 .card {
@@ -165,4 +168,44 @@ main {
 
 .btn-share {
     position: relative;
+}
+
+@media (max-width:375px) {
+    .card {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card>img {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 15px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .card .description-card {
+        padding: 25px 30px;
+        padding-bottom: 15px;
+    }
+
+    .description-card h1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .share {
+        position: absolute;
+        left: -300px;
+        top: 0;
+        width: 375px;
+        justify-content: flex-start;
+    }
+
+    .share::after {
+        border: none;
+    }
+
 }
