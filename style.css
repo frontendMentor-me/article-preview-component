@@ -39,6 +39,7 @@ main {
     width: 400px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+
 }
 
 .description-card {
@@ -56,7 +57,7 @@ main {
 .description-card>p {
     padding: 10px 0;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 25px;
     color: var(--veryDarkGrayish);
 }
 
@@ -68,14 +69,14 @@ main {
     width: 100%;
 }
 
-.description-card .data-autor #btn-share>img {
+.description-card .data-autor #btn>img {
     background-color: var(--lightGrayishBlue);
     padding: 15px;
     border-radius: 50%;
     transition: 0.5s all;
 }
 
-.description-card .data-autor #btn-share>img:hover {
+.description-card .data-autor #btn>img:hover {
     cursor: pointer;
     background-color: var(--veryDarkGrayish);
 }
@@ -91,7 +92,7 @@ main {
 }
 
 .description-card .data-autor .autor .description {
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .description-card .data-autor .autor .description h3 {
@@ -103,6 +104,65 @@ main {
     color: var(--desaturatedDarkBlue);
     font-size: 14px;
 }
-.share{
+
+#btn {
+    position: relative;
+}
+
+
+.share {
     background-color: var(--veryDarkGrayish);
+    padding: 7px 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 250px;
+    position: absolute;
+    left: -100px;
+    top: -105px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.37);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.37);
+
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s all;
+}
+
+.off {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s all;
+}
+
+.share::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-top: 15px solid var(--veryDarkGrayish);
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.share p {
+    padding-right: 10px;
+    color: var(--grayishBlue);
+    letter-spacing: 6px;
+    font-size: 15px;
+}
+
+.share .icons>img {
+    padding: 0 7px;
+}
+
+.btn-share {
+    position: relative;
 }
