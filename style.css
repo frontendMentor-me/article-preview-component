@@ -188,7 +188,7 @@ main {
 
     .card .description-card {
         padding: 25px 30px;
-        padding-bottom: 15px;
+        padding-bottom: 0px;
     }
 
     .description-card h1 {
@@ -199,7 +199,7 @@ main {
     .share {
         position: absolute;
         left: -300px;
-        top: 0;
+        top: -6px;
         width: 375px;
         justify-content: flex-start;
     }
@@ -208,4 +208,7 @@ main {
         border: none;
     }
 
+    .btn-share {
+        background-color: red;
+    }
 }
